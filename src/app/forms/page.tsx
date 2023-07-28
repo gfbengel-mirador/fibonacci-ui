@@ -1,6 +1,10 @@
+
 import { Button } from '@/components'
+
 import { Metadata } from 'next'
 import Link from 'next/link'
+import { FormContent } from './components/FormContent';
+
 
 export const metadata: Metadata = {
   title: 'Forms | Fibonacci UI',
@@ -18,9 +22,7 @@ export default function Home() {
           <Button variant="link">{`< Voltar`}</Button>
         </Link>
       </div>
-      <div className="flex max-w-[1340px] flex-wrap justify-between gap-6">
-        <Button>Teste</Button>
-      </div>
+      <FormContent />
     </div>
   )
 }

@@ -29,7 +29,7 @@ module.exports = withTV({
     extend: {
       colors: {
         primary: mirador,
-        secondary: colors.rose,
+        secondary: colors.pink,
         success: colors.emerald,
         danger: colors.red,
         info: colors.sky,

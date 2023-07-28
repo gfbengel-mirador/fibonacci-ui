@@ -2,16 +2,16 @@ import { Slot } from '@radix-ui/react-slot'
 import { ButtonHTMLAttributes, ComponentProps, ComponentPropsWithoutRef } from 'react'
 import { tv, VariantProps } from 'tailwind-variants'
 
-const button = tv({
-  base: 'font-medium focus:outline-none focus:ring-2 focus:ring-offset-1 ease-in-out transition-all duration-300 hover:cursor-pointer',
+const button = tv({ 
+  base: 'font-medium focus:outline-none focus:ring-2 focus:ring-slate-600 ease-in-out transition-all duration-300 hover:cursor-pointer',
   variants: {
     color: {
-      primary: 'focus:ring-primary-600 disabled:text-primary-700',
-      secondary: 'focus:ring-secondary-600 disabled:text-secondary-700',
-      danger: 'focus:ring-danger-600 disabled:text-danger-700',
-      success: 'focus:ring-success-600 disabled:text-success-700',
-      info: 'focus:ring-info-600 disabled:text-info-700',
-      warn: 'focus:ring-warn-600 disabled:text-warn-700',
+      primary: 'disabled:text-primary-700',
+      secondary: 'disabled:text-secondary-700',
+      danger: 'disabled:text-danger-700',
+      success: 'disabled:text-success-700',
+      info: 'disabled:text-info-700',
+      warn: 'disabled:text-warn-700',
     },
     size: {
       xs: 'text-xs rounded-md px-1.5 h-6',
