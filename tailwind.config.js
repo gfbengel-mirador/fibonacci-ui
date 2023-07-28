@@ -25,6 +25,7 @@ module.exports = withTV({
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    
     extend: {
       colors: {
         primary: mirador,

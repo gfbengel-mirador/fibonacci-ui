@@ -20,14 +20,14 @@ export default function Home() {
       </h1>
       <div className="flex flex-wrap justify-between gap-6">
         <Link href="/">
-          <Button.Root variant="link">{`< Voltar`}</Button.Root>
+          <Button variant="link">{`< Voltar`}</Button>
         </Link>
       </div>
       <div className="flex max-w-[1340px] flex-wrap justify-between gap-6">
         {buttonsToShow.colors.map((color) => (
           <div
             key={color}
-            className={`flex flex-col items-center gap-2 rounded-lg border-2 border-solid p-2`}
+            className="flex-col flex items-center gap-2 rounded-lg border-2 border-solid p-2"
           >
             <p className="text-slate-600">Button {color}</p>
             {buttonsToShow.variants.map((variant) => (
@@ -35,15 +35,16 @@ export default function Home() {
                 <p className="text-sm text-slate-600">{variant}</p>
                 <div className="flex  items-center justify-center gap-1">
                   {buttonsToShow.sizes.map((size) => (
-                    <Button.Root
+                    <Button
                       key={color + variant + size}
                       variant={variant}
                       color={color}
                       size={size}
                     >
                       click me!
-                    </Button.Root>
+                    </Button>
                   ))}
+
                 </div>
               </div>
             ))}
@@ -51,14 +52,14 @@ export default function Home() {
               <p className="text-sm text-slate-600">disabled</p>
               <div className="flex  items-center justify-center gap-1">
                 {buttonsToShow.variants.map((variant) => (
-                  <Button.Root
+                  <Button
                     key={color + variant}
                     variant={variant}
                     color={color}
                     disabled
                   >
                     click me!
-                  </Button.Root>
+                  </Button>
                 ))}
               </div>
             </div>
@@ -67,14 +68,14 @@ export default function Home() {
 
               <div className="flex flex-col items-center justify-center gap-2">
                 {buttonsToShow.variants.map((variant) => (
-                  <Button.Root
+                  <Button
                     key={color + variant}
                     variant={variant}
                     color={color}
                     block
                   >
                     click me!
-                  </Button.Root>
+                  </Button>
                 ))}
               </div>
             </div>
