@@ -1,7 +1,9 @@
 'use client';
 
 import { Check, Envelope, Key,File } from "@/assets/icons";
-import { Button, TextInput, Checkbox } from "@/components";
+import { Button, TextInput, Checkbox,RadioGroup } from "@/components";
+
+
 
 export function FormContent(){
   return (
@@ -33,7 +35,7 @@ export function FormContent(){
 
         <Checkbox.Root>
           <Checkbox.Checkbox id='check4' disabled defaultChecked />
-          <Checkbox.Label htmlFor='check4'  disabled>Eu aceito os termos de uso</Checkbox.Label>
+          <Checkbox.Label htmlFor='check4' disabled>Eu aceito os termos de uso</Checkbox.Label>
           <Checkbox.Icon><File /></Checkbox.Icon>
         </Checkbox.Root>
 
@@ -49,6 +51,37 @@ export function FormContent(){
         </Checkbox.Root>
 
 
+        <RadioGroup.Root>
+          <RadioGroup.Title>Escolha uma opção</RadioGroup.Title>
+          
+          <RadioGroup.Content direction="row">
+            <RadioGroup.Item.Root>
+              <RadioGroup.Item.Indicator value='teste1' id="teste1" />
+              <RadioGroup.Item.Label htmlFor="teste1">teste1</RadioGroup.Item.Label>
+            </RadioGroup.Item.Root>
+
+            <RadioGroup.Item.Root>
+              <RadioGroup.Item.Indicator value='teste11' id="teste11" />
+              <RadioGroup.Item.Label htmlFor="teste11">teste11</RadioGroup.Item.Label>
+            </RadioGroup.Item.Root>
+
+            <RadioGroup.Item.Root>
+              <RadioGroup.Item.Indicator value='teste12' id="teste12" />
+              <RadioGroup.Item.Label htmlFor="teste12">teste12</RadioGroup.Item.Label>
+            </RadioGroup.Item.Root>
+
+            <RadioGroup.Item.Root>
+              <RadioGroup.Item.Indicator value='teste13' id="teste13" />
+              <RadioGroup.Item.Label htmlFor="teste13">teste13</RadioGroup.Item.Label>
+            </RadioGroup.Item.Root>
+
+            <RadioGroup.Item.Root>
+              <RadioGroup.Item.Indicator value='teste14' id="teste14" />
+              <RadioGroup.Item.Label htmlFor="teste14">teste14</RadioGroup.Item.Label>
+            </RadioGroup.Item.Root>
+
+          </RadioGroup.Content>
+        </RadioGroup.Root>
 
         <Button block variant="gradient">Enviar</Button>
       </div>

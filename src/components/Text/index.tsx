@@ -54,7 +54,7 @@ type AsSlot = {
   asChild?: true
 }
 
-type TextProps = {
+export type TextProps = {
   children: React.ReactNode
   className?:string
 

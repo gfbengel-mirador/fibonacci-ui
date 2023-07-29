@@ -22,15 +22,16 @@ function CheckboxCheckbox({className,...props}:CheckboxCheckboxProps){
   
   return (
     <CheckboxPrimitive.Root
-        className="w-5 h-5 p-[2px] focus:outline-none focus:ring-2 focus:ring-primary-600 bg-zinc-400 data-[state=checked]:bg-primary-500 rounded data-[disabled]:data-[state=unchecked]:bg-zinc-300 data-[disabled]:data-[state=checked]:bg-primary-300"
-        {...props}
-      >
-        <CheckboxPrimitive.Indicator asChild>
-          <Check weight='bold' className='h-4 w-4 text-primary-50' />
-        </CheckboxPrimitive.Indicator>
-      </CheckboxPrimitive.Root>
-    )
-  }
+      className="w-5 h-5 p-[2px] focus:outline-none focus:ring-2 focus:ring-primary-600 bg-zinc-400 data-[state=checked]:bg-primary-500 rounded data-[disabled]:data-[state=unchecked]:bg-zinc-300 data-[disabled]:data-[state=checked]:bg-primary-300"
+      {...props}
+    >
+      <CheckboxPrimitive.Indicator asChild>
+        <Check weight='bold' className='h-4 w-4 text-primary-50' />
+      </CheckboxPrimitive.Indicator>
+
+    </CheckboxPrimitive.Root>
+  )
+}
   
 interface CheckboxLabelProps extends LabelHTMLAttributes<HTMLLabelElement> {
   disabled?:boolean
