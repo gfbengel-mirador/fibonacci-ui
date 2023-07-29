@@ -23,7 +23,16 @@ export default function Home() {
     sizes: ['xs', 'sm', 'md', 'lg', 'xl'],
     weights: ['thin', 'light', 'normal', 'bold', 'black'],
   } as {
-    colors: ('default' | 'gray' | 'primary' | 'secondary' | 'danger' | 'success' | 'info' | 'warn')[]
+    colors: (
+      | 'default'
+      | 'gray'
+      | 'primary'
+      | 'secondary'
+      | 'danger'
+      | 'success'
+      | 'info'
+      | 'warn'
+    )[]
     components: (typeof Text | typeof Heading)[]
     sizes: ('xs' | 'sm' | 'md' | 'lg' | 'xl')[]
     weights: ('thin' | 'light' | 'normal' | 'bold' | 'black')[]
