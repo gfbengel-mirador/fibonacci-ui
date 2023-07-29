@@ -11,6 +11,10 @@ export default function Home() {
     colors: ['primary', 'secondary', 'danger', 'success', 'info', 'warn'],
     variants: ['solid', 'outline', 'gradient', 'link'],
     sizes: ['xs', 'sm', 'md', 'lg'],
+  } as {
+    variants: ("link" | "solid" | "outline" | "gradient" | undefined)[];
+    colors: ('primary' | 'secondary' | 'danger' | 'success' | 'info' | 'warn')[];
+    sizes: ('xs' | 'sm' | 'md' | 'lg')[];
   }
 
   return (
