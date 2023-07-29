@@ -13,7 +13,7 @@ export default function Home() {
         <Link href="/text-heading">
           <Button variant="link">Text/Heading</Button>
         </Link>
-        
+
         <Link href="/forms">
           <Button variant="link">Forms</Button>
         </Link>

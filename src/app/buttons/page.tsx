@@ -27,7 +27,7 @@ export default function Home() {
         {buttonsToShow.colors.map((color) => (
           <div
             key={color}
-            className="flex-col flex items-center gap-2 rounded-lg border-2 border-solid p-2"
+            className="flex flex-col items-center gap-2 rounded-lg border-2 border-solid p-2"
           >
             <p className="text-slate-600">Button {color}</p>
             {buttonsToShow.variants.map((variant) => (
@@ -44,7 +44,6 @@ export default function Home() {
                       click me!
                     </Button>
                   ))}
-
                 </div>
               </div>
             ))}

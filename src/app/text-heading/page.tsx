@@ -9,10 +9,19 @@ export const metadata: Metadata = {
 
 export default function Home() {
   const textsToShow = {
-    components: [Text,Heading],
-    colors: ['default', 'gray', 'primary', 'secondary', 'danger', 'success', 'info', 'warn'],
+    components: [Text, Heading],
+    colors: [
+      'default',
+      'gray',
+      'primary',
+      'secondary',
+      'danger',
+      'success',
+      'info',
+      'warn',
+    ],
     sizes: ['xs', 'sm', 'md', 'lg', 'xl'],
-    weights:['thin', 'light', 'normal', 'bold', 'black']
+    weights: ['thin', 'light', 'normal', 'bold', 'black'],
   }
 
   return (
@@ -25,22 +34,31 @@ export default function Home() {
           <Button variant="link">{`< Voltar`}</Button>
         </Link>
       </div>
-      <div className="flex  px-1 max-w-[1200px] flex-wrap justify-center gap-1">
+      <div className="flex  max-w-[1200px] flex-wrap justify-center gap-1 px-1">
         {textsToShow.components.map((Component) => (
           <div
             key={Component.name}
-            className="flex-col flex items-center gap-2 rounded-lg p-2"
+            className="flex flex-col items-center gap-2 rounded-lg p-2"
           >
             {textsToShow.colors.map((color) => (
               <div key={color} className="w-full">
                 {textsToShow.weights.map((weight) => (
-                  <div key={weight} className="flex  items-center justify-center gap-1">
+                  <div
+                    key={weight}
+                    className="flex  items-center justify-center gap-1"
+                  >
                     {textsToShow.sizes.map((size) => (
-                      <Component color={color} weight={weight} size={size} key={color+weight+size}>{Component.name} {weight} {size}.</Component>
+                      <Component
+                        color={color}
+                        weight={weight}
+                        size={size}
+                        key={color + weight + size}
+                      >
+                        {Component.name} {weight} {size}.
+                      </Component>
                     ))}
                   </div>
                 ))}
-                
               </div>
             ))}
           </div>

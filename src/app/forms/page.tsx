@@ -1,10 +1,8 @@
-
 import { Button } from '@/components'
 
 import { Metadata } from 'next'
 import Link from 'next/link'
-import { FormContent } from './components/FormContent';
-
+import { FormContent } from './components/FormContent'
 
 export const metadata: Metadata = {
   title: 'Forms | Fibonacci UI',
